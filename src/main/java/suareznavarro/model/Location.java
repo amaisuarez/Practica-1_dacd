@@ -1,13 +1,16 @@
-package suareznavarro;
+package suareznavarro.model;
 
 public class Location {
     private double latitude;
     private double longitude;
 
+    private String place;
+
     // Constructor
-    public Location(double latitude, double longitude) {
+    public Location(double latitude, double longitude, String place) {
         this.latitude = latitude;
         this.longitude = longitude;
+        this.place = place;
     }
 
     // Getter para obtener la latitud
@@ -29,4 +32,13 @@ public class Location {
     public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
 }

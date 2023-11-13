@@ -4,19 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherMapProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherStore.java" afterDir="false" />
+    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="First Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/SQLController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherDataList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherMapProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherSQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/places.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherMapProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +49,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
-  <component name="RunManager" selected="Application.WeatherMapProvider">
-    <configuration name="WeatherMapProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="suareznavarro.WeatherMapProvider" />
+}]]></component>
+  <component name="RunManager" selected="Application.SQLController">
+    <configuration name="SQLController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="suareznavarro.controller.SQLController" />
       <module name="practica1_variacion2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="suareznavarro.*" />
+          <option name="PATTERN" value="suareznavarro.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherMapProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="suareznavarro.controller.WeatherMapProvider" />
+      <module name="practica1_variacion2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="suareznavarro.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,7 +94,7 @@
       <module name="practica1_variacion2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="suareznavarro.*" />
+          <option name="PATTERN" value="suareznavarro.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,11 +103,11 @@
       </method>
     </configuration>
     <configuration name="WeatherStore$saveWeatherData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="suareznavarro.WeatherStore$saveWeatherData" />
+      <option name="MAIN_CLASS_NAME" value="suareznavarro.controller.WeatherStore$saveWeatherData" />
       <module name="practica1_variacion2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="suareznavarro.*" />
+          <option name="PATTERN" value="suareznavarro.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,6 +117,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SQLController" />
         <item itemvalue="Application.WeatherMapProvider" />
         <item itemvalue="Application.WeatherStore$saveWeatherData" />
         <item itemvalue="Application.WeatherStore$JDBCExample" />
@@ -113,6 +133,30 @@
       <option name="presentableId" value="Default" />
       <updated>1699353841480</updated>
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1699621113284</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699621113284</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
 </project>

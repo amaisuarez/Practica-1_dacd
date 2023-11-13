@@ -1,4 +1,7 @@
-package suareznavarro;
+package suareznavarro.controller;
+
+import suareznavarro.model.Location;
+import suareznavarro.model.Weather;
 
 import java.time.LocalDate;
 

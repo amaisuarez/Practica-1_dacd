@@ -1,4 +1,4 @@
-package suareznavarro;
+package suareznavarro.model;
 
 public class Weather {
     private double temperature;
@@ -6,6 +6,7 @@ public class Weather {
     private double humidity;
     private double cloudiness;
     private double windSpeed;
+    private Location location;
 
     // getters and setters of weather
     public Weather(double temperature, double precipitation, double humidity, double cloudiness, double windSpeed) {
@@ -54,5 +55,14 @@ public class Weather {
 
     public void setWindSpeed(double windSpeed) {
         this.windSpeed = windSpeed;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+
     }
 }

@@ -1,4 +1,6 @@
-package suareznavarro;
+package suareznavarro.controller;
+import suareznavarro.model.Weather;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -29,7 +31,4 @@ public interface WeatherStore {
         }
     }
 
-
-
-    //void saveWeatherData(String island, LocalDate date, Weather data);
 }
