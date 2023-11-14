@@ -4,23 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/SQLController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherDataList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherMapProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/places.csv" afterDir="false" />
+    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="Some changes in this second commit we add a lot of things that help us to improve the program">
+      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/DataInserter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherMapProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/WeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/SQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/SQLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherDataList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherMapProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherMapProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherSQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/places.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/places.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +52,28 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SQLController">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="suareznavarro.controller.Main" />
+      <module name="practica1_variacion2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="suareznavarro.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SQLController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="suareznavarro.controller.SQLController" />
       <module name="practica1_variacion2" />
@@ -117,8 +128,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SQLController" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.WeatherMapProvider" />
+        <item itemvalue="Application.SQLController" />
         <item itemvalue="Application.WeatherStore$saveWeatherData" />
         <item itemvalue="Application.WeatherStore$JDBCExample" />
       </list>
@@ -141,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699621113284</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Some changes in this second commit we add a lot of things that help us to improve the program">
+      <option name="closed" value="true" />
+      <created>1699899913292</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699899913292</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +177,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Some changes in this second commit we add a lot of things that help us to improve the program" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some changes in this second commit we add a lot of things that help us to improve the program" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

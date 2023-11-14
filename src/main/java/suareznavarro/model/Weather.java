@@ -8,13 +8,20 @@ public class Weather {
     private double windSpeed;
     private Location location;
 
+    private String dxTxt;
+
+    private String description;
+
     // getters and setters of weather
-    public Weather(double temperature, double precipitation, double humidity, double cloudiness, double windSpeed) {
+    public Weather(double temperature, double precipitation, double humidity, double cloudiness, double windSpeed, String dxTxt, String description) {
         this.temperature = temperature;
         this.precipitation = precipitation;
         this.humidity = humidity;
         this.cloudiness = cloudiness;
         this.windSpeed = windSpeed;
+        this.dxTxt = dxTxt;
+        this.description = description;
+
     }
 
     public double getTemperature() {
@@ -56,6 +63,23 @@ public class Weather {
     public void setWindSpeed(double windSpeed) {
         this.windSpeed = windSpeed;
     }
+
+    public String getDxTxt() {
+        return dxTxt;
+    }
+
+    public void setDxTxt(String dxTxt) {
+        this.dxTxt = dxTxt;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
 
     public Location getLocation() {
         return location;

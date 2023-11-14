@@ -1,33 +1,29 @@
 package suareznavarro.controller;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-import suareznavarro.model.*;
+import suareznavarro.model.Location;
+import suareznavarro.model.Weather;
 
+import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class WeatherMapProvider {
 
-    public static void main(String[] args) {
-        String csvFilePath = "/Users/amaisuarez/IdeaProjects/practica1_variacion2/src/main/resources/places.csv";
-
-        // Obtener la lista de ubicaciones desde el archivo CSV
+    public List<Weather> processLocationsFromCSV(String csvFilePath, String apiKey) {
         List<Location> locations = getLocationsFromCSV(csvFilePath);
+        List<Weather> weatherDataList = new ArrayList<>();
 
-        // Tu clave de API de OpenWeatherMap
-        String apiKey = "bef3ed697c1ead2aa693ab8b1b539fdb";
-
-        // Realizar solicitudes para cada ubicación
         for (Location location : locations) {
-            getWeatherData(location.getPlace(), location.getLatitude(), location.getLongitude(), apiKey);
+            List<Weather> weatherData = getWeatherData(location, apiKey);
+            weatherDataList.addAll(weatherData);
         }
+
+        return weatherDataList;
     }
 
     private static List<Location> getLocationsFromCSV(String csvFilePath) {
@@ -50,21 +46,21 @@ public class WeatherMapProvider {
 
         return locations;
     }
-    private static void getWeatherData(String locationName, double latitude, double longitude, String apiKey) {
-        String apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=" + apiKey;
+
+    private static List<Weather> getWeatherData(Location location, String apiKey) {
+        List<Weather> weatherDataList = new ArrayList<>();
+        String apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + location.getLatitude() + "&lon=" + location.getLongitude() + "&appid=" + apiKey;
 
         try {
-            // Crear la conexión
+
             URL url = new URL(apiUrl);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
-            // Configurar la solicitud
             connection.setRequestMethod("GET");
 
-            // Obtener la respuesta
+
             int responseCode = connection.getResponseCode();
             if (responseCode == HttpURLConnection.HTTP_OK) {
-                // Leer la respuesta
+
                 try (BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
                     StringBuilder response = new StringBuilder();
                     String line;
@@ -73,28 +69,28 @@ public class WeatherMapProvider {
                         response.append(line);
                     }
 
-                    // Procesar la respuesta como JSON
+
                     JSONObject jsonResponse = new JSONObject(response.toString());
 
-                    // Obtener información sobre la ubicación
-                    JSONObject city = jsonResponse.getJSONObject("city");
-                    String cityName = city.getString("name");
-                    JSONObject coord = city.getJSONObject("coord");
-                    //double latitude = coord.getDouble("lat");
-                    //double longitude = coord.getDouble("lon");
 
-                    // Extraer información específica y filtrar por hora
                     JSONArray forecastList = jsonResponse.getJSONArray("list");
                     for (int i = 0; i < forecastList.length(); i++) {
                         JSONObject forecast = forecastList.getJSONObject(i);
 
-                        // Obtener la fecha y hora de la predicción
                         String dtTxt = forecast.getString("dt_txt");
 
-                        // Verificar si es a las 12:00:00
-                        if (dtTxt.endsWith("12:00:00")) {
+                        if (is12PM(dtTxt)) {
                             JSONObject main = forecast.getJSONObject("main");
                             double temperature = main.getDouble("temp");
+                            int humidity = main.getInt("humidity");
+
+
+                            double precipitation = 0.0;
+
+
+                            if (forecast.has("rain") && forecast.getJSONObject("rain").has("3h")) {
+                                precipitation = forecast.getJSONObject("rain").getDouble("3h");
+                            }
 
                             JSONArray weatherArray = forecast.getJSONArray("weather");
                             JSONObject weather = weatherArray.getJSONObject(0);
@@ -103,29 +99,48 @@ public class WeatherMapProvider {
                             JSONObject clouds = forecast.getJSONObject("clouds");
                             int cloudiness = clouds.getInt("all");
 
+
                             JSONObject wind = forecast.getJSONObject("wind");
                             double windSpeed = wind.getDouble("speed");
 
-                            // Imprimir los datos incluyendo información de ubicación
-                            System.out.println("Place: " + cityName + " (Latitude: " + latitude + ", Longitude: " + longitude + ")");
-                            System.out.println("Fecha y hora: " + dtTxt);
-                            System.out.println("Temperature: " + temperature);
+                            Weather weatherData = new Weather(temperature, precipitation, humidity,
+                                    cloudiness, windSpeed, dtTxt, description);
+                            weatherData.setLocation(location);
+                            weatherDataList.add(weatherData);
+
+                            System.out.println("Place: " + location.getPlace() +
+                                    " (Latitude: " + location.getLatitude() +
+                                    ", Longitude: " + location.getLongitude() + ")");
+                            System.out.println("Date and hour: " + dtTxt);
+                            System.out.println("Temperature: " + Math.round(temperature - 273.00));
                             System.out.println("Description: " + description);
                             System.out.println("Cloudiness: " + cloudiness);
                             System.out.println("WindSpeed: " + windSpeed);
+                            System.out.println("Precipitation: " + precipitation);
+                            System.out.println("Humidity: " + humidity);
                             System.out.println("--------");
-
                         }
+
+
                     }
                 }
+
             } else {
-                System.out.println("Error. Código de respuesta: " + responseCode);
+                System.out.println("Error: " + responseCode);
             }
 
-
             connection.disconnect();
-        } catch (Exception e) {
+        } catch (
+                Exception e) {
             e.printStackTrace();
         }
+        return weatherDataList;
     }
-}
+
+        private static boolean is12PM (String dtTxt){
+            return dtTxt.endsWith("12:00:00");
+        }
+
+
+    }
+
