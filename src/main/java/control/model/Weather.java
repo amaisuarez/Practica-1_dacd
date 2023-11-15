@@ -52,34 +52,17 @@ public class Weather {
         return cloudiness;
     }
 
-    public void setCloudiness(double cloudiness) {
-        this.cloudiness = cloudiness;
-    }
-
     public double getWindSpeed() {
         return windSpeed;
-    }
-
-    public void setWindSpeed(double windSpeed) {
-        this.windSpeed = windSpeed;
     }
 
     public String getDxTxt() {
         return dxTxt;
     }
 
-    public void setDxTxt(String dxTxt) {
-        this.dxTxt = dxTxt;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getDescription() {
         return description;
     }
-
 
     public Location getLocation() {
         return location;

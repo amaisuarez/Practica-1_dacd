@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="I have solved the last errors and inserted the data into a database, only the code improvement is missing">
+    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="All minor issues have been resolved, and we have added new features such as updating data every 6 hours">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/DataInserter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/DataInserter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/SQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/SQLController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherMapProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/WeatherMapProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/model/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/model/Weather.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699978653008</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="All minor issues have been resolved, and we have added new features such as updating data every 6 hours">
+      <option name="closed" value="true" />
+      <created>1700080311931</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700080311931</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,7 +184,8 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Some changes in this second commit we add a lot of things that help us to improve the program" />
     <MESSAGE value="I have solved the last errors and inserted the data into a database, only the code improvement is missing" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have solved the last errors and inserted the data into a database, only the code improvement is missing" />
+    <MESSAGE value="All minor issues have been resolved, and we have added new features such as updating data every 6 hours" />
+    <option name="LAST_COMMIT_MESSAGE" value="All minor issues have been resolved, and we have added new features such as updating data every 6 hours" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
