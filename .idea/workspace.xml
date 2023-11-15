@@ -4,22 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="Some changes in this second commit we add a lot of things that help us to improve the program">
-      <change afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/DataInserter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="I have solved the last errors and inserted the data into a database, only the code improvement is missing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/SQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/SQLController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherDataList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherMapProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherMapProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherSQL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherStore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/places.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/places.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/DataInserter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/DataInserter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/SQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/SQLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/controller/WeatherMapProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/WeatherMapProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/suareznavarro/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/model/Weather.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -57,16 +50,16 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="suareznavarro.controller.Main" />
+      <option name="MAIN_CLASS_NAME" value="control.controller.Main" />
       <module name="practica1_variacion2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="suareznavarro.controller.*" />
+          <option name="PATTERN" value="control.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,11 +68,11 @@
       </method>
     </configuration>
     <configuration name="SQLController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="suareznavarro.controller.SQLController" />
+      <option name="MAIN_CLASS_NAME" value="control.controller.SQLController" />
       <module name="practica1_variacion2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="suareznavarro.controller.*" />
+          <option name="PATTERN" value="control.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,11 +81,11 @@
       </method>
     </configuration>
     <configuration name="WeatherMapProvider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="suareznavarro.controller.WeatherMapProvider" />
+      <option name="MAIN_CLASS_NAME" value="control.controller.WeatherMapProvider" />
       <module name="practica1_variacion2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="suareznavarro.model.*" />
+          <option name="PATTERN" value="control.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,7 +98,7 @@
       <module name="practica1_variacion2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="suareznavarro.model.*" />
+          <option name="PATTERN" value="control.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,7 +111,7 @@
       <module name="practica1_variacion2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="suareznavarro.model.*" />
+          <option name="PATTERN" value="control.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699899913292</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="I have solved the last errors and inserted the data into a database, only the code improvement is missing">
+      <option name="closed" value="true" />
+      <created>1699978653008</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699978653008</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +179,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="Some changes in this second commit we add a lot of things that help us to improve the program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes in this second commit we add a lot of things that help us to improve the program" />
+    <MESSAGE value="I have solved the last errors and inserted the data into a database, only the code improvement is missing" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have solved the last errors and inserted the data into a database, only the code improvement is missing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

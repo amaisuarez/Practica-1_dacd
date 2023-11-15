@@ -1,7 +1,7 @@
-package suareznavarro.controller;
+package control.controller;
 
 import java.sql.*;
-import suareznavarro.model.*;
+import control.model.*;
 import java.util.List;
 
 
@@ -10,8 +10,6 @@ public class DataInserter {
     private static final String DATABASE_URL = "jdbc:sqlite:/Users/amaisuarez/IdeaProjects/practica1_variacion2/src/main/resources/database.db";
 
     public static void insertWeatherData(List<Weather> weatherDataList) {
-        System.out.println(DATABASE_URL);
-
         try (Connection connection = DriverManager.getConnection(DATABASE_URL)) {
 
             String insertQuery = "INSERT INTO database (location_name, latitude, longitude, date_time, " +

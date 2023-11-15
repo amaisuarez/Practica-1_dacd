@@ -1,4 +1,4 @@
-package suareznavarro.model;
+package control.model;
 
 public class Location {
     private double latitude;

@@ -1,4 +1,4 @@
-package suareznavarro.model;
+package control.model;
 
 public class Weather {
     private double temperature;

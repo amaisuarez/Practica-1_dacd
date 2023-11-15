@@ -1,9 +1,8 @@
-package suareznavarro.controller;
+package control.controller;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import suareznavarro.model.Location;
-import suareznavarro.model.Weather;
-
+import control.model.Location;
+import control.model.Weather;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.InputStreamReader;
@@ -140,7 +139,6 @@ public class WeatherMapProvider {
         private static boolean is12PM (String dtTxt){
             return dtTxt.endsWith("12:00:00");
         }
-
 
     }
 

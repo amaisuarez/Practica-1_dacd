@@ -1,4 +1,4 @@
-package suareznavarro.controller;
+package control.controller;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
