@@ -59,9 +59,11 @@ Interacts with the OpenWeatherMap API to fetch weather data for specified locati
  **Model Classes*
 
 **Weather**
+
 Represents weather data with attributes such as temperature, precipitation, humidity, cloudiness, wind speed, description, and date-time. It includes a reference to the Location where the data was recorded.
 
 **Location**
+
 Represents geographical coordinates (latitude and longitude) and the name of a location. Instances of Location are used by Weather to associate weather data with specific places.
 
 
