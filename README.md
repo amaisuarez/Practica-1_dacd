@@ -1,9 +1,13 @@
 ## Practice 1 DACD
 
 **Subject:** Development of Applications for Data Science 
+
 **Course:** Second Year 
+
 **Degree:** Data Science  
+
 **School:** School of Engineering and Mathematics
+
 **University:** University of Las Palmas de Gran Canaria
 
 **Submitted by:** Amai Suárez Navarro 
