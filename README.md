@@ -42,7 +42,7 @@ Some dependencies have been added to the pom.xml file. You can find the details 
 
 # Design Overview
 
-# Controller Classes
+**Controller Classes*
 
 **Main**
 The Main class serves as the entry point of the application. It initializes the SQLite database using SQLController, schedules weather data updates with WeatherScheduler, and inserts initial data using DataInserter. The main loop continuously fetches new weather data every 6 hours and inserts it into the database.
@@ -56,7 +56,7 @@ Handles the creation of the SQLite database. The createDatabase method uses JDBC
 **WeatherMapProvider**
 Interacts with the OpenWeatherMap API to fetch weather data for specified locations. It processes location data from a CSV file, sends requests to the API, and returns a list of Weather objects.
 
-# Model Classes
+ **Model Classes*
 
 **Weather**
 Represents weather data with attributes such as temperature, precipitation, humidity, cloudiness, wind speed, description, and date-time. It includes a reference to the Location where the data was recorded.
