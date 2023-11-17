@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="One of the last updates" />
+    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="several changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700239798754</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="several changes">
+      <option name="closed" value="true" />
+      <created>1700239887707</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700239887707</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +217,8 @@
     <MESSAGE value="All minor issues have been resolved, and we have added new features such as updating data every 6 hours" />
     <MESSAGE value="Now, we have removed methods that we were not using" />
     <MESSAGE value="One of the last updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="One of the last updates" />
+    <MESSAGE value="several changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="several changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

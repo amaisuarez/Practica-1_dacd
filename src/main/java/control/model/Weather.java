@@ -28,24 +28,12 @@ public class Weather {
         return temperature;
     }
 
-    public void setTemperature(double temperature) {
-        this.temperature = temperature;
-    }
-
     public double getPrecipitation() {
         return precipitation;
     }
 
-    public void setPrecipitation(double precipitation) {
-        this.precipitation = precipitation;
-    }
-
     public double getHumidity() {
         return humidity;
-    }
-
-    public void setHumidity(double humidity) {
-        this.humidity = humidity;
     }
 
     public double getCloudiness() {
