@@ -7,9 +7,7 @@ public class Weather {
     private double cloudiness;
     private double windSpeed;
     private Location location;
-
     private String dxTxt;
-
     private String description;
 
     // getters and setters of weather

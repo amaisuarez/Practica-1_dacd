@@ -67,3 +67,6 @@ Represents weather data with attributes such as temperature, precipitation, humi
 Represents geographical coordinates (latitude and longitude) and the name of a location. Instances of Location are used by Weather to associate weather data with specific places.
 
 
+# Weather UML 
+
+![Diagram]()
