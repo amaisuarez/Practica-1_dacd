@@ -1,4 +1,5 @@
 package control.controller;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 import control.model.Location;
@@ -25,7 +26,7 @@ public class WeatherMapProvider {
         return weatherDataList;
     }
 
-    private static List<Location> getLocationsFromCSV(String csvFilePath) {
+    public static List<Location> getLocationsFromCSV(String csvFilePath) {
         List<Location> locations = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(csvFilePath))) {
@@ -46,7 +47,7 @@ public class WeatherMapProvider {
         return locations;
     }
 
-    private static List<Weather> getWeatherData(Location location, String apiKey) {
+    public static List<Weather> getWeatherData(Location location, String apiKey) {
         List<Weather> weatherDataList = new ArrayList<>();
         String apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=" + location.getLatitude() + "&lon=" + location.getLongitude() + "&appid=" + apiKey;
 

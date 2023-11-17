@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="Now, we have removed methods that we were not using">
+    <list default="true" id="df437ddf-dc52-4987-acb8-05f96d5200f4" name="Changes" comment="One of the last updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/controller/DataInserter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/DataInserter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/control/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/controller/SQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/SQLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/control/controller/WeatherMapProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/control/controller/WeatherMapProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700080623952</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="One of the last updates">
+      <option name="closed" value="true" />
+      <created>1700166136358</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700166136359</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,7 +205,8 @@
     <MESSAGE value="I have solved the last errors and inserted the data into a database, only the code improvement is missing" />
     <MESSAGE value="All minor issues have been resolved, and we have added new features such as updating data every 6 hours" />
     <MESSAGE value="Now, we have removed methods that we were not using" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now, we have removed methods that we were not using" />
+    <MESSAGE value="One of the last updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="One of the last updates" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
