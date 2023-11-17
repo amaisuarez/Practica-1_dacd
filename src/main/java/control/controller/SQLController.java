@@ -19,7 +19,6 @@ public class SQLController {
 
                 statement.executeUpdate("DROP TABLE IF EXISTS database");
 
-
                 String createTableQuery = "CREATE TABLE database (" +
                         "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                         "location_name TEXT," +
