@@ -11,7 +11,7 @@ public class Weather {
     private String description;
 
     // getters and setters of weather
-    public Weather(double temperature, double precipitation, double humidity, double cloudiness, double windSpeed, String dxTxt, String description) {
+    public Weather(double temperature, double precipitation, double humidity, double cloudiness, double windSpeed, String dxTxt, String description, Location location) {
         this.temperature = temperature;
         this.precipitation = precipitation;
         this.humidity = humidity;
