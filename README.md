@@ -13,10 +13,8 @@
 **Submitted by:** Amai Suárez Navarro 
 
 # Functionality
+This project focuses on the development of an application for retrieving and storing weather data from various locations. It utilizes the OpenWeatherMap API to gather information and then stores it in an SQLite database. The program is designed to run periodically, updating the data every 6 hours. Additionally, the application provides the capability to visualize weather data in separate tables for each island. Each table is dedicated to a specific location, allowing users to easily access and analyze weather information specific to individual islands.
 
-This project focuses on the development of an application for retrieving and storing weather data 
-from various locations.It utilizes the OpenWeatherMap API to gather information and then stores it in an SQLite database. 
-The program is designed to run periodically, updating the data every 6 hours.
 
 # Resources Used
 
@@ -50,11 +48,22 @@ The Main class serves as the entry point of the application. It initializes the 
 **DataInserter**
 Responsible for inserting weather data into the SQLite database. It collaborates with the SQLController to interact with the database. The DataInserter class is called by Main to insert data obtained from the WeatherMapProvider.
 
-**SQLController**
-Handles the creation of the SQLite database. The createDatabase method uses JDBC to establish a connection, drop any existing tables, and create a new database table with specified fields.
+**LocationCSVParser**
+The LocationCSVParser class reads a CSV file containing geographical location information and converts the data into a list of Location objects. It parses each line of the CSV, extracts relevant information such as name, latitude, and longitude, and creates Location objects, which are then added to a list. This class facilitates the conversion of location data from a CSV file for use in other parts of the program, such as fetching weather data from the OpenWeatherMap API.
 
 **WeatherMapProvider**
-Interacts with the OpenWeatherMap API to fetch weather data for specified locations. It processes location data from a CSV file, sends requests to the API, and returns a list of Weather objects.
+The WeatherMapProvider class is responsible for interacting with the OpenWeatherMap API to fetch weather data for specified locations. It collaborates with the APIWeatherFetcher to obtain raw JSON responses from the API and utilizes the WeatherDataProcessor to convert the JSON data into a list of Weather objects associated with specific locations. This class enables the retrieval of weather information for multiple locations by processing the API responses and facilitating the integration of weather data into the application.
+
+**WeatherDataProcessor**
+The WeatherDataProcessor class processes raw JSON weather data obtained from the OpenWeatherMap API. It extracts relevant information such as temperature, precipitation, humidity, cloudiness, wind speed, and description for each forecasted time point. The class filters the data to focus on forecasts for 12:00 PM and creates corresponding Weather objects for these time points. Additionally, it handles cases where rain volume data is available and provides appropriate default values if certain information is not present in the API response. Overall, WeatherDataProcessor transforms the raw API response into a list of Weather objects suitable for storage and further use within the application.
+
+**SQLController**
+The SQLController class manages the creation of SQLite database tables based on the provided list of locations. It uses JDBC to establish a connection to the database and dynamically generates tables for each location, ensuring that each table has fields for date-time, temperature, description, cloudiness, wind speed, precipitation, and humidity. The class handles potential exceptions during the database interaction and provides a mechanism to create tables for different locations, allowing the application to store weather data for multiple geographic points in a structured manner within an SQLite database.
+
+**APIWeatherFetcher**
+The APIWeatherFetcher class is responsible for fetching weather data from the OpenWeatherMap API based on the provided geographical coordinates (latitude and longitude) and API key. It constructs the API request URL, sends a GET request to the API, and retrieves the raw JSON response. The class then converts this JSON response into a JSONObject and returns it. In essence, APIWeatherFetcher facilitates the communication with the OpenWeatherMap API to obtain weather data for a specific location, forming a crucial component in the data retrieval process of the application.
+
+
 
  **Model Classes*
 
